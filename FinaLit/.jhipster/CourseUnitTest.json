@@ -1,0 +1,31 @@
+{
+  "applications": ["finalit"],
+  "changelogDate": "20230824203126",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "course_unit_test",
+  "fields": [
+    {
+      "fieldName": "testName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "unitTestNumber",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CourseUnitTest",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "courseUnit",
+      "otherEntityRelationshipName": "courseUnitTest",
+      "relationshipName": "courseUnit",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

@@ -15,7 +15,7 @@
 
 spring:
   application:
-    name: FinaLit
+    name: finalit
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
   liquibase:
     contexts: test
@@ -33,13 +33,13 @@ spring:
     basename: i18n/messages
   task:
     execution:
-      thread-name-prefix: fina-lit-task-
+      thread-name-prefix: finalit-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: fina-lit-scheduling-
+      thread-name-prefix: finalit-scheduling-
       pool:
         size: 20
   thymeleaf:
@@ -56,9 +56,9 @@ server:
 # ===================================================================
 jhipster:
   clientApp:
-    name: 'finaLitApp'
+    name: 'finalitApp'
   mail:
-    from: FinaLit@localhost.com
+    from: finalit@localhost.com
     base-url: http://127.0.0.1:8080
   logging:
     # To test json console appender
@@ -72,7 +72,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: YjllMjkzNWRjMTk4M2ZkOTlmNWI5MjdjNzkwYjM4ODc1OTE0NDIxMTYwMmU0ZTY0NDU3NzE3N2Y4NjM4YmVkOTg1OGYyMzgxZjdmMDVkODk5NGRhZGMzYmEyNDZiZmRhYmZkY2JmZTg2YjMwOTI3ZTcwZGUxZDk3MTExNGJmYzY=
+        base64-secret: ZDQxY2E1N2MzNmU2ODY2OGY0NTNiOGFlYWYyMzlkNGJjYTJjOTNlMjc3N2U0YTc2YTgxMTJjMjFlYzFkNTA4NjM4ZjI1MzM1NGRkMzJlNmE4ZjljODRmYmJlNmQ0Y2YyYmQzZDBjMGIyM2ZkZWIxMDMwMmZjMGQ2MjkzMTk3ZjI=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
 

@@ -17,7 +17,7 @@ logging:
   level:
     ROOT: INFO
     tech.jhipster: INFO
-    rocks.zipcode: INFO
+    finalit.olamide: INFO
 
 management:
   metrics:
@@ -33,14 +33,18 @@ spring:
       enabled: false
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/FinaLit
-    username: FinaLit
+    url: jdbc:mysql://localhost:3306/finalit?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: root
     password:
     hikari:
       poolName: Hikari
       auto-commit: false
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
   jpa:
-    database-platform: tech.jhipster.domain.util.FixedPostgreSQL10Dialect
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
   liquibase:
     contexts: prod
@@ -101,7 +105,7 @@ jhipster:
         # - In the JHipster Registry (which includes a Spring Cloud Config server)
         # - In a separate `application-prod.yml` file, in the same folder as your executable JAR file
         # - In the `JHIPSTER_SECURITY_AUTHENTICATION_JWT_BASE64_SECRET` environment variable
-        base64-secret: YjllMjkzNWRjMTk4M2ZkOTlmNWI5MjdjNzkwYjM4ODc1OTE0NDIxMTYwMmU0ZTY0NDU3NzE3N2Y4NjM4YmVkOTg1OGYyMzgxZjdmMDVkODk5NGRhZGMzYmEyNDZiZmRhYmZkY2JmZTg2YjMwOTI3ZTcwZGUxZDk3MTExNGJmYzY=
+        base64-secret: ZDQxY2E1N2MzNmU2ODY2OGY0NTNiOGFlYWYyMzlkNGJjYTJjOTNlMjc3N2U0YTc2YTgxMTJjMjFlYzFkNTA4NjM4ZjI1MzM1NGRkMzJlNmE4ZjljODRmYmJlNmQ0Y2YyYmQzZDBjMGIyM2ZkZWIxMDMwMmZjMGQ2MjkzMTk3ZjI=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000

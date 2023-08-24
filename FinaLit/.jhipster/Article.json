@@ -1,0 +1,33 @@
+{
+  "applications": ["finalit"],
+  "changelogDate": "20230824203123",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "article",
+  "fields": [
+    {
+      "fieldName": "articleDescription",
+      "fieldType": "String",
+      "javadoc": "The firstname attribute."
+    },
+    {
+      "fieldName": "articleTitle",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "The Employee entity.",
+  "jpaMetamodelFiltering": false,
+  "name": "Article",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "lesson",
+      "otherEntityRelationshipName": "articles",
+      "relationshipName": "lesson",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

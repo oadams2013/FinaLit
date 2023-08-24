@@ -1,0 +1,24 @@
+{
+  "applications": ["finalit"],
+  "changelogDate": "20230824203118",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "student",
+  "fields": [
+    {
+      "fieldName": "studentName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "studentEmail",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Student",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

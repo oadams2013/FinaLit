@@ -1,0 +1,35 @@
+{
+  "applications": ["finalit"],
+  "changelogDate": "20230824203124",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "practice_problem_set",
+  "fields": [
+    {
+      "fieldName": "practiceProblemName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "practiceProblemQuestion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "practiceProblemAnswer",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PracticeProblemSet",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "lesson",
+      "otherEntityRelationshipName": "practiceProblemSet",
+      "relationshipName": "lesson",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

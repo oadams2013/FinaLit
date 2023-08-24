@@ -1,0 +1,51 @@
+{
+  "applications": ["finalit"],
+  "changelogDate": "20230824203120",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "course_unit",
+  "fields": [
+    {
+      "fieldName": "unitName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "unitNumber",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "not an ignored comment",
+  "jpaMetamodelFiltering": false,
+  "name": "CourseUnit",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "unitQuiz",
+      "otherEntityRelationshipName": "courseUnit",
+      "ownerSide": true,
+      "relationshipName": "unitQuiz",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "lesson",
+      "otherEntityRelationshipName": "courseUnit",
+      "relationshipName": "lessons",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "courseUnitTest",
+      "otherEntityRelationshipName": "courseUnit",
+      "relationshipName": "courseUnitTest",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "course",
+      "otherEntityRelationshipName": "courseUnit",
+      "relationshipName": "course",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

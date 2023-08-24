@@ -1,0 +1,28 @@
+{
+  "applications": ["finalit"],
+  "changelogDate": "20230824203125",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "unit_quiz",
+  "fields": [
+    {
+      "fieldName": "unitQuizDescription",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "UnitQuiz",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "courseUnit",
+      "otherEntityRelationshipName": "unitQuiz",
+      "ownerSide": false,
+      "relationshipName": "courseUnit",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

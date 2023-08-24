@@ -1,0 +1,49 @@
+{
+  "applications": ["finalit"],
+  "changelogDate": "20230824203121",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "lesson",
+  "fields": [
+    {
+      "fieldName": "lessonName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lessonNumber",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Lesson",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "practiceProblemSet",
+      "otherEntityRelationshipName": "lesson",
+      "relationshipName": "practiceProblemSet",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "article",
+      "otherEntityRelationshipName": "lesson",
+      "relationshipName": "articles",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "video",
+      "otherEntityRelationshipName": "lesson",
+      "relationshipName": "videos",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "courseUnit",
+      "otherEntityRelationshipName": "lessons",
+      "relationshipName": "courseUnit",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

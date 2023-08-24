@@ -1,0 +1,27 @@
+{
+  "applications": ["finalit"],
+  "changelogDate": "20230824203119",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "course",
+  "fields": [
+    {
+      "fieldName": "courseName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Course",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "courseUnit",
+      "otherEntityRelationshipName": "course",
+      "relationshipName": "courseUnit",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
